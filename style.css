@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-
+    text-decoration: none;
 }
 
 header {
@@ -80,7 +80,6 @@ header {
 
 }
 
-
 .container {
     display: flex;
     box-shadow: 0px 0px 50px -17px rgba(0, 0, 0, 0.75);
@@ -93,12 +92,12 @@ header {
     text-align: center;
     color: gray;
     
-
 }
 
 .content {
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
 }
 
 .content p {
