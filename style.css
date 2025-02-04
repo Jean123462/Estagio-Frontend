@@ -37,7 +37,7 @@ header {
 .botao1 {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.37);
-    color: white;
+    color: green;
     padding: 10px;
     margin-right: 5px;
     border-radius: 1px;
@@ -122,3 +122,29 @@ header {
     height: 200px;
     margin: 0 20px;
 } 
+
+
+
+.rodape {
+    margin-top: 70px;
+    color: gray;
+    background-color: rgba(97, 199, 41, 0.381);
+    padding: 20px;
+
+}
+
+
+.rodape .footertext {
+    margin: 15px 0;
+    color: black;
+}
+
+.footertext h4 {
+    margin: 5px 0;
+
+}
+
+.rodape a {
+    margin: 5px 0;
+}
+
