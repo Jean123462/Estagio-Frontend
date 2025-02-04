@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 }
 
-header{
+header {
     background-image: url(./img/image-back2.jpg);
     height: 400px;
     background-size: cover;
@@ -55,4 +55,48 @@ header{
     margin-left: 5px;
     border-radius: 5px;
 
+}
+.imgChameleon {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    margin-top: 30px;
+
+
+}
+.quote {
+    position: relative;
+    bottom: 80px;
+    text-align: center;
+    color: gray;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.content p {
+    color: gray;
+    margin: 0 20px;
+}
+
+.institucional {
+    width: 300px;
+    height: 300px;
+    margin: 0 20px;
+}
+
+.empresa {
+    width: 300px;
+    height: 300px;
+    margin: 0 20px;
+}
+
+.comunidade {
+    width: 300px;
+    height: 300px;
+    margin: 0 20px;
 }
