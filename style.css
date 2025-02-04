@@ -5,7 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
-
+a{
+    color: white;
+}
 header {
     background-image: url(./img/image-back2.jpg);
     height: 400px;
@@ -123,7 +125,24 @@ header {
     margin: 0 20px;
 } 
 
+.btn {
+    margin-top: 10px ;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: gray;
+}
 
+.conteudoImg{
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px -17px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    border: 1px solid lightgray;
+}
 
 .rodape {
     margin-top: 70px;
