@@ -69,14 +69,13 @@ header {
 }
 
 .textoEmpresa {
-    margin: 20px 100px;
-
+    margin: 50px 100px;
+    text-align: start;
 
 }
 
 .imgEmpresa {
     position: relative;
-    top: 20px;
     right: 50px;
 
 }
