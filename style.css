@@ -5,9 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
-a{
+
+a {
     color: white;
 }
+
 header {
     background-image: url(./img/image-back2.jpg);
     height: 400px;
@@ -33,13 +35,29 @@ header {
     font-size: 50px;
 
 }
-
-
+.IoTTree{
+    color: #0000;
+    --g: linear-gradient(lightgray 0 0) no-repeat;
+    background: var(--g),var(--g);
+    background-size: 0% 100%;
+    -webkit-background-clip: padding-box,text;
+            background-clip: padding-box,text;
+    animation: 
+      t 1.2s .5s both,
+      b 1.2s 1.3s both; 
+  }
+  
+  @keyframes t{
+    to {background-size: 150% 100%} 
+  }
+  @keyframes b {
+    to {background-position:-200% 0,0 0}
+  }
 
 .botao1 {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.37);
-    color: green;
+    color: #008000;
     padding: 10px;
     margin-right: 5px;
     border-radius: 1px;
@@ -56,7 +74,7 @@ header {
 }
 
 .imgGreen {
-    width: 400px;
+    width: 300px;
     height: 250px;
 
 
@@ -84,6 +102,7 @@ header {
     display: flex;
     box-shadow: 0px 0px 50px -17px rgba(0, 0, 0, 0.75);
     padding: 50px;
+    border-radius: 3px;
 }
 
 .quote {
@@ -91,7 +110,7 @@ header {
     bottom: 40px;
     text-align: center;
     color: gray;
-    
+
 }
 
 .content {
@@ -121,10 +140,10 @@ header {
     width: 200px;
     height: 200px;
     margin: 0 20px;
-} 
+}
 
 .btn {
-    margin-top: 10px ;
+    margin-top: 10px;
     text-decoration: none;
     background-color: green;
     color: white;
@@ -132,12 +151,13 @@ header {
     border-radius: 3px;
     cursor: pointer;
     border: gray;
-    &:hover{
+
+    &:hover {
         background-color: rgb(74, 103, 74);
     }
 }
 
-.conteudoImg{
+.conteudoImg {
     padding: 30px 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 50px -17px rgba(0, 0, 0, 0.75);
@@ -150,12 +170,13 @@ header {
     color: gray;
     background-color: rgba(97, 199, 41, 0.381);
     padding: 20px;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .rodape .footertext {
     margin: 15px 0;
-    color: black;
+    color: green;
 }
 
 .footertext h4 {
@@ -167,3 +188,24 @@ header {
     margin: 5px 0;
 }
 
+.redes {
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    top: 10px;
+    right: 20px;
+    margin: 0;
+}
+.redes a {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+
+}
+.imgRede {
+    width: 24px;
+    height: 24px;
+}
+.contato{
+    color: #008000;
+}
