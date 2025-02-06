@@ -56,6 +56,24 @@ header {
   @keyframes b {
     to {background-position:-200% 0,0 0}
   }
+.fraseEfeito{
+    color: #0000;
+    --g: linear-gradient(lightgray 0 0) no-repeat;
+    background: var(--g),var(--g);
+    background-size: 0% 100%;
+    -webkit-background-clip: padding-box,text;
+            background-clip: padding-box,text;
+    animation: 
+      t 6s .5s both,
+      b 6s 0s both; 
+  }
+  
+  @keyframes t{
+    to {background-size: 150% 100%} 
+  }
+  @keyframes b {
+    to {background-position:-200% 0,0 0}
+  }
 
 
 
@@ -70,7 +88,7 @@ header {
 }
 
 .imgGreen {
-    width: 300px;
+    width: 350px;
     height: 250px;
     border-radius: 5px;
 
@@ -170,7 +188,7 @@ header {
 .rodape {
     margin-top: 70px;
     color: gray;
-    background-color: rgba(97, 199, 41, 0.381);
+    background-color: #61c72961;
     padding: 20px;
     display: flex;
     justify-content: space-between;
