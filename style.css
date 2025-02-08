@@ -1,246 +1,718 @@
   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-
-a {
-    color: white;
-}
-
-header {
-    background-image: url(./img/image-back2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    color: lightgrey;
-}
-
-.cabecalho {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 20px;
-
-}
-
-.cabecalho h1 {
-    position: relative;
-    bottom: 40px;
-    font-size: 50px;
-
-}
-.IoTTree{
-    color: #0000;
-    --g: linear-gradient(lightgray 0 0) no-repeat;
-    background: var(--g),var(--g);
-    background-size: 0% 100%;
-    -webkit-background-clip: padding-box,text;
-            background-clip: padding-box,text;
-    animation: 
-      t 1.2s .5s both,
-      b 1.2s 1.3s both; 
-  }
-  
-  @keyframes t{
-    to {background-size: 150% 100%} 
-  }
-  @keyframes b {
-    to {background-position:-200% 0,0 0}
-  }
-.fraseEfeito{
-    color: #0000;
-    --g: linear-gradient(lightgray 0 0) no-repeat;
-    background: var(--g),var(--g);
-    background-size: 0% 100%;
-    -webkit-background-clip: padding-box,text;
-            background-clip: padding-box,text;
-    animation: 
-      t 6s .5s both,
-      b 6s 0s both; 
-  }
-  
-  @keyframes t{
-    to {background-size: 150% 100%} 
-  }
-  @keyframes b {
-    to {background-position:-200% 0,0 0}
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      font-family: "Raleway", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
   }
 
 
 
-.botao2 {
-    text-decoration: none;
-    background-color: orangered;
-    color: white;
-    padding: 10px;
-    margin-left: 5px;
-    border-radius: 5px;
 
-}
+  @media (min-width:800px) and (max-width:1024px) {
 
-.imgGreen {
-    width: 350px;
-    height: 250px;
-    border-radius: 5px;
+      a {
+          color: white;
+      }
 
-}
+      header {
+          background-image: url(./img/image-back2.jpg);
+          background-size: cover;
+          background-position: center;
+          height: 400px;
+          justify-content: center;
+          align-items: center;
+          color: lightgrey;
+      }
 
-.cardEmpresa {
+      .cabecalho {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding-top: 20px;
 
-    margin: 40px 60px;
-    padding: 20px;
-}
+      }
 
-.textoEmpresa {
-    margin: 50px 100px;
-    text-align: start;
+      .cabecalho h1 {
+          position: relative;
+          bottom: 40px;
+          font-size: 50px;
 
-}
+      }
 
-.imgEmpresa {
-    position: relative;
-    right: 50px;
+      .IoTTree {
+          color: #0000;
+          --g: linear-gradient(lightgray 0 0) no-repeat;
+          background: var(--g), var(--g);
+          background-size: 0% 100%;
+          -webkit-background-clip: padding-box, text;
+          background-clip: padding-box, text;
+          animation:
+              t 1.2s .5s both,
+              b 1.2s 1.3s both;
+      }
 
-}
+      @keyframes t {
+          to {
+              background-size: 150% 100%
+          }
+      }
 
-.container {
-    display: flex;
-    box-shadow: 0px 0px 50px -17px rgba(0, 0, 0, 0.75);
-    padding: 50px;
-    border-radius: 5px;
-}
+      @keyframes b {
+          to {
+              background-position: -200% 0, 0 0
+          }
+      }
 
-.quote {
-    position: relative;
-    bottom: 40px;
-    text-align: center;
-    color: gray;
+      .fraseEfeito {
+          color: #0000;
+          --g: linear-gradient(lightgray 0 0) no-repeat;
+          background: var(--g), var(--g);
+          background-size: 0% 100%;
+          -webkit-background-clip: padding-box, text;
+          background-clip: padding-box, text;
+          animation:
+              t 6s .5s both,
+              b 6s 0s both;
+      }
 
-}
+      @keyframes t {
+          to {
+              background-size: 150% 100%
+          }
+      }
 
-.content {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-
-.content p {
-    color: gray;
-    margin: 0 20px;
-}
-
-.institucional {
-    width: 200px;
-    height: 200px;
-    margin: 0 20px;
-    border-radius: 5px;
-
-}
-
-.empresa {
-    width: 200px;
-    height: 200px;
-    margin: 0 20px;
-    border-radius: 5px;
-
-}
-
-.comunidade {
-    width: 200px;
-    height: 200px;
-    margin: 0 20px;
-    border-radius: 5px;
-
-}
-
-.btn {
-    margin-top: 10px;
-    text-decoration: none;
-    background-color: green;
-    color: white;
-    padding: 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    border: gray;
-
-    &:hover {
-        background-color: rgb(74, 103, 74);
-    }
-}
-
-.conteudoImg {
-    padding: 30px 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 50px -17px rgba(0, 0, 0, 0.75);
-    text-align: center;
-    border: 1px solid lightgray;
-}
-
-.rodape {
-    margin-top: 70px;
-    color: gray;
-    background-color: #61c72961;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.rodape .footertext {
-    margin: 15px 0;
-    color: green;
-}
-.footertext a{
-    color: #008000;
-}
-.footertext h4 {
-    margin: 5px 0;
-
-}
-
-.rodape a {
-    margin: 5px 0;
-}
-
-.redes {
-    display: flex;
-    flex-direction:row;
-    position: relative;
-    top: 10px;
-    right: 20px;
-    margin: 0;
-}
-.redes a {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
-
-}
-.imgRede {
-    width: 24px;
-    height: 24px;
-}
-.contato{
-    color: #008000;
-}
+      @keyframes b {
+          to {
+              background-position: -200% 0, 0 0
+          }
+      }
 
 
 
-@media (max-width:800px) {
+      .botao2 {
+          text-decoration: none;
+          background-color: orangered;
+          color: white;
+          padding: 10px;
+          margin-left: 5px;
+          border-radius: 5px;
 
-    .cabecalho {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding-top: 20px;
-    
-    }
+      }
 
-}
+      .imgGreen {
+          width: 350px;
+          height: 250px;
+          border-radius: 5px;
+
+      }
+
+      .cardEmpresa {
+
+          margin: 40px 60px;
+          padding: 20px;
+      }
+
+      .textoEmpresa {
+          margin: 50px 100px;
+          text-align: start;
+
+      }
+
+      .imgEmpresa {
+          position: relative;
+          right: 50px;
+
+      }
+
+      .container {
+          display: flex;
+          box-shadow: 0px 0px 50px -17px rgba(0, 0, 0, 0.75);
+          padding: 50px;
+          border-radius: 5px;
+      }
+
+      .quote {
+          position: relative;
+          bottom: 40px;
+          text-align: center;
+          color: gray;
+
+      }
+
+      .content {
+          display: flex;
+          justify-content: center;
+          justify-content: space-evenly;
+      }
+
+      .content p {
+          color: gray;
+          margin: 0 20px;
+      }
+
+      .institucional {
+          width: 200px;
+          height: 200px;
+          margin: 0 20px;
+          border-radius: 5px;
+
+      }
+
+      .empresa {
+          width: 200px;
+          height: 200px;
+          margin: 0 20px;
+          border-radius: 5px;
+
+      }
+
+      .comunidade {
+          width: 200px;
+          height: 200px;
+          margin: 0 20px;
+          border-radius: 5px;
+
+      }
+
+      .btn {
+          margin-top: 10px;
+          text-decoration: none;
+          background-color: green;
+          color: white;
+          padding: 10px;
+          border-radius: 3px;
+          cursor: pointer;
+          border: gray;
+
+          &:hover {
+              background-color: rgb(74, 103, 74);
+          }
+      }
+
+      .conteudoImg {
+          padding: 30px 10px;
+          border-radius: 5px;
+          box-shadow: 0px 0px 50px -17px rgba(0, 0, 0, 0.75);
+          text-align: center;
+          border: 1px solid lightgray;
+      }
+
+      .rodape {
+          margin-top: 70px;
+          color: gray;
+          background-color: #61c72961;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .rodape .footertext {
+          margin: 15px 0;
+          color: green;
+      }
+
+      .footertext a {
+          color: #008000;
+      }
+
+      .footertext h4 {
+          margin: 5px 0;
+
+      }
+
+      .rodape a {
+          margin: 5px 0;
+      }
+
+      .redes {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          top: 10px;
+          right: 20px;
+          margin: 0;
+      }
+
+      .redes a {
+          width: 24px;
+          height: 24px;
+          margin: 0 5px;
+
+      }
+
+      .imgRede {
+          width: 24px;
+          height: 24px;
+      }
+
+      .contato {
+          color: #008000;
+      }
+
+
+  }
+
+  @media (min-width:425px) and (max-width:799px) {
+      a {
+          color: white;
+      }
+
+      header {
+          background-image: url(./img/image-back2.jpg);
+          background-size: cover;
+          background-position: center;
+          height: 400px;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          color: lightgrey;
+      }
+
+      .cabecalho {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding-top: 20px;
+
+      }
+
+      .cabecalho h1 {
+          position: relative;
+          bottom: 40px;
+          font-size: 50px;
+
+      }
+
+      .IoTTree {
+          color: #0000;
+          --g: linear-gradient(lightgray 0 0) no-repeat;
+          background: var(--g), var(--g);
+          background-size: 0% 100%;
+          -webkit-background-clip: padding-box, text;
+          background-clip: padding-box, text;
+          animation:
+              t 1.2s .5s both,
+              b 1.2s 1.3s both;
+      }
+
+      @keyframes t {
+          to {
+              background-size: 150% 100%
+          }
+      }
+
+      @keyframes b {
+          to {
+              background-position: -200% 0, 0 0
+          }
+      }
+
+      .fraseEfeito {
+          color: #0000;
+          --g: linear-gradient(lightgray 0 0) no-repeat;
+          background: var(--g), var(--g);
+          background-size: 0% 100%;
+          -webkit-background-clip: padding-box, text;
+          background-clip: padding-box, text;
+          animation:
+              t 6s .5s both,
+              b 6s 0s both;
+      }
+
+      @keyframes t {
+          to {
+              background-size: 150% 100%
+          }
+      }
+
+      @keyframes b {
+          to {
+              background-position: -200% 0, 0 0
+          }
+      }
+
+
+      .imgGreen {
+          width: 350px;
+          height: 250px;
+          border-radius: 5px;
+
+      }
+
+      .cardEmpresa {
+
+          margin: 40px 60px;
+          padding: 20px;
+      }
+
+      .textoEmpresa {
+          margin: 50px 0px;
+
+      }
+
+
+
+      .container {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          border-radius: 5px;
+      }
+
+      .quote {
+          position: relative;
+          bottom: 40px;
+          text-align: center;
+          color: gray;
+
+      }
+
+      .content {
+          display: flex;
+          flex-direction: column;
+          margin: 50px 0;
+
+      }
+
+      .content p {
+          color: gray;
+          margin: 0 20px;
+      }
+
+      .institucional {
+          width: 200px;
+          height: 200px;
+          margin: 0 20px;
+          border-radius: 5px;
+
+      }
+
+      .empresa {
+          width: 200px;
+          height: 200px;
+          margin: 0 20px;
+          border-radius: 5px;
+
+      }
+
+      .comunidade {
+          width: 200px;
+          height: 200px;
+          margin: 0 20px;
+          border-radius: 5px;
+
+      }
+
+      .btn {
+          margin-top: 10px;
+          text-decoration: none;
+          background-color: green;
+          color: white;
+          padding: 10px;
+          border-radius: 3px;
+          cursor: pointer;
+          border: gray;
+
+          &:hover {
+              background-color: rgb(74, 103, 74);
+          }
+      }
+
+      .conteudoImg {
+          padding: 30px 0px;
+          border-radius: 5px;
+          box-shadow: 0px 0px 50px -17px rgba(0, 0, 0, 0.75);
+          text-align: center;
+          margin: 3% 20%;
+      }
+
+      .rodape {
+          margin-top: 70px;
+          color: gray;
+          background-color: #61c72961;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .rodape .footertext {
+          margin: 15px 0;
+          color: green;
+      }
+
+      .footertext a {
+          color: #008000;
+      }
+
+      .footertext h4 {
+          margin: 5px 0;
+
+      }
+
+      .rodape a {
+          margin: 5px 0;
+      }
+
+      .redes {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          top: 10px;
+          right: 20px;
+          margin: 0;
+      }
+
+      .redes a {
+          width: 24px;
+          height: 24px;
+          margin: 0 5px;
+
+      }
+
+      .imgRede {
+          width: 24px;
+          height: 24px;
+      }
+
+      .contato {
+          color: #008000;
+      }
+
+
+  }
+
+  @media (min-width: 375px) and (max-width:425px) {
+      body {
+          font-size: small;
+
+      }
+
+      a {
+          color: white;
+      }
+
+      header {
+          background-image: url(./img/image-back2.jpg);
+          background-size: cover;
+          background-position: center;
+          height: 400px;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          color: lightgrey;
+      }
+
+      .cabecalho {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding-top: 20px;
+
+      }
+
+      .cabecalho h1 {
+          position: relative;
+          bottom: 40px;
+          font-size: 50px;
+
+      }
+
+      .IoTTree {
+          color: #0000;
+          --g: linear-gradient(lightgray 0 0) no-repeat;
+          background: var(--g), var(--g);
+          background-size: 0% 100%;
+          -webkit-background-clip: padding-box, text;
+          background-clip: padding-box, text;
+          animation:
+              t 1.2s .5s both,
+              b 1.2s 1.3s both;
+      }
+
+      @keyframes t {
+          to {
+              background-size: 150% 100%
+          }
+      }
+
+      @keyframes b {
+          to {
+              background-position: -200% 0, 0 0
+          }
+      }
+
+      .fraseEfeito {
+          color: #0000;
+          --g: linear-gradient(lightgray 0 0) no-repeat;
+          background: var(--g), var(--g);
+          background-size: 0% 100%;
+          -webkit-background-clip: padding-box, text;
+          background-clip: padding-box, text;
+          animation:
+              t 6s .5s both,
+              b 6s 0s both;
+      }
+
+      @keyframes t {
+          to {
+              background-size: 150% 100%
+          }
+      }
+
+      @keyframes b {
+          to {
+              background-position: -200% 0, 0 0
+          }
+      }
+
+
+      .imgGreen {
+          width: 250px;
+          height: 150px;
+          border-radius: 5px;
+
+      }
+
+      .cardEmpresa {
+
+          margin: 40px 60px;
+          padding: 20px;
+      }
+
+      .textoEmpresa {
+          margin: 50px 0px;
+
+      }
+
+
+
+      .container {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          border-radius: 5px;
+      }
+
+      .quote {
+          position: relative;
+          bottom: 40px;
+          text-align: center;
+          color: gray;
+
+      }
+
+      .content {
+          display: flex;
+          flex-direction: column;
+          margin: 50px 0;
+
+      }
+
+      .content p {
+          color: gray;
+          margin: 0 20px;
+      }
+
+      .institucional {
+          width: 200px;
+          height: 200px;
+          margin: 0 20px;
+          border-radius: 5px;
+
+      }
+
+      .empresa {
+          width: 200px;
+          height: 200px;
+          margin: 0 20px;
+          border-radius: 5px;
+
+      }
+
+      .comunidade {
+          width: 200px;
+          height: 200px;
+          margin: 0 20px;
+          border-radius: 5px;
+
+      }
+
+      .btn {
+          margin-top: 10px;
+          text-decoration: none;
+          background-color: green;
+          color: white;
+          padding: 10px;
+          border-radius: 3px;
+          cursor: pointer;
+          border: gray;
+
+          &:hover {
+              background-color: rgb(74, 103, 74);
+          }
+      }
+
+      .conteudoImg {
+          padding: 30px 0px;
+          border-radius: 5px;
+          box-shadow: 0px 0px 50px -17px rgba(0, 0, 0, 0.75);
+          text-align: center;
+          margin: 3% 20%;
+      }
+
+      .rodape {
+          margin-top: 70px;
+          color: gray;
+          background-color: #61c72961;
+          padding: 20px;
+
+      }
+
+      .rodape .footertext {
+          margin: 15px 0;
+          color: green;
+      }
+
+      .footertext a {
+          color: #008000;
+      }
+
+      .footertext h4 {
+          margin: 5px 0;
+
+      }
+
+      .rodape a {
+          margin: 5px 0;
+      }
+
+      .redes {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          top: 10px;
+          right: 20px;
+          margin: 0;
+      }
+
+      .redes a {
+          width: 24px;
+          height: 24px;
+          margin: 0 5px;
+
+      }
+
+      .imgRede {
+          width: 24px;
+          height: 24px;
+      }
+
+      .contato {
+          color: #008000;
+      }
+
+  }
