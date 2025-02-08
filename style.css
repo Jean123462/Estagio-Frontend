@@ -15,7 +15,6 @@ a {
 
 header {
     background-image: url(./img/image-back2.jpg);
-    height: 400px;
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -230,4 +229,18 @@ header {
 }
 .contato{
     color: #008000;
+}
+
+
+
+@media (max-width:800px) {
+
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 20px;
+    
+    }
+
 }
