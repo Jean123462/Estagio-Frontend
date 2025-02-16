@@ -8,7 +8,6 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
-
 @media (min-width:800px) and (max-width:1440px) {
     a {
         color: white;
@@ -155,7 +154,7 @@
 
 }
 
-@media (min-width:425px) and (max-width:799px) {
+@media (min-width:587px) and (max-width:799px) {
 
     a {
         color: white;
@@ -189,8 +188,8 @@
     }
 
     .navegationBar {
-        margin-left: 20px;
         display: flex;
+        font-size: medium;
         gap: 55px;
     }
 
@@ -237,7 +236,6 @@
     }
 
     .textoEmpresa {
-        margin: 0px 100px;
         text-align: start;
 
     }
@@ -295,6 +293,146 @@
     }
 
 }
+
+@media (min-width: 425px) and (max-width:586px) {
+    body {
+        font-size: small;
+
+    }
+
+    a {
+        color: white;
+    }
+
+    header {
+        background-image: url(image-back2.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        color: lightgrey;
+    }
+    .cabecalho {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-top: 20px;
+
+    }
+
+    .cabecalho h1 {
+        position: relative;
+        bottom: 40px;
+        font-size: 50px;
+
+    }
+
+    .navegationBar {
+        display: flex;
+    }
+
+    .navegationBar a {
+        text-decoration: none;
+        color: lightgrey;
+        padding: 0 10px;
+
+    }
+
+    .imgGreen {
+        width: 300px;
+        height: 200px;
+        border-radius: 5px;
+
+    }
+
+    .btn {
+        margin-top: 10px;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+        border: gray;
+
+        &:hover {
+            background-color: rgb(74, 103, 74);
+            color: white;
+
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .cardEmpresa {
+
+        margin: 40px 60px;
+        padding: 0 -50px;
+    }
+
+    .textoEmpresa {
+        margin: 50px 0px;
+
+    }
+
+    .rodape {
+        margin-top: 70px;
+        color: gray;
+        background-color: #61c72961;
+        padding: 20px;
+
+    }
+
+    .rodape .footertext {
+        margin: 15px 0;
+        color: green;
+    }
+
+    .footertext a {
+        color: #008000;
+    }
+
+    .footertext h4 {
+        margin: 5px 0;
+
+    }
+
+    .rodape a {
+        margin: 5px 0;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 10px;
+        right: 20px;
+        margin: 0;
+    }
+
+    .redes a {
+        width: 24px;
+        height: 24px;
+        margin: 0 5px;
+
+    }
+
+    .imgRede {
+        width: 24px;
+        height: 24px;
+    }
+
+    .contato {
+        color: #008000;
+    }
+}
+
+
 @media (min-width: 375px) and (max-width:425px) {
     body {
         font-size: small;
@@ -343,7 +481,7 @@
 
     .imgGreen {
         width: 300px;
-        height: 250px;
+        height: 200px;
         border-radius: 5px;
 
     }
@@ -373,7 +511,7 @@
     .cardEmpresa {
 
         margin: 40px 60px;
-        padding: 20px;
+        padding: 0 -50px;
     }
 
     .textoEmpresa {
