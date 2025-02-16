@@ -545,6 +545,10 @@
           }
       }
 
+      .fraseEfeito{
+        text-align: center;
+        font-size: medium;
+      }
       .fraseEfeito {
           color: #0000;
           --g: linear-gradient(lightgray 0 0) no-repeat;
